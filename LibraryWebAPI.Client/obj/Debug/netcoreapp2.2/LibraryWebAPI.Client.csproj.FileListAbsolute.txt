@@ -1,0 +1,14 @@
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\bin\Debug\netcoreapp2.2\LibraryWebAPI.Client.deps.json
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\bin\Debug\netcoreapp2.2\LibraryWebAPI.Client.runtimeconfig.json
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\bin\Debug\netcoreapp2.2\LibraryWebAPI.Client.runtimeconfig.dev.json
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\bin\Debug\netcoreapp2.2\LibraryWebAPI.Client.dll
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\bin\Debug\netcoreapp2.2\LibraryWebAPI.Client.pdb
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.csprojAssemblyReference.cache
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.csproj.CoreCompileInputs.cache
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.AssemblyInfoInputs.cache
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.AssemblyInfo.cs
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.dll
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.pdb
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\bin\Debug\netcoreapp2.2\LibraryWebAPI.Core.dll
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\bin\Debug\netcoreapp2.2\LibraryWebAPI.Core.pdb
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.csproj.CopyComplete

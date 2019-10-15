@@ -1,0 +1,12 @@
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\bin\Debug\netcoreapp2.2\LibraryWebAPI.Store.deps.json
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\bin\Debug\netcoreapp2.2\LibraryWebAPI.Store.dll
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\bin\Debug\netcoreapp2.2\LibraryWebAPI.Store.pdb
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\bin\Debug\netcoreapp2.2\LibraryWebAPI.Core.dll
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\bin\Debug\netcoreapp2.2\LibraryWebAPI.Core.pdb
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\obj\Debug\netcoreapp2.2\LibraryWebAPI.Store.csprojAssemblyReference.cache
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\obj\Debug\netcoreapp2.2\LibraryWebAPI.Store.csproj.CoreCompileInputs.cache
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\obj\Debug\netcoreapp2.2\LibraryWebAPI.Store.AssemblyInfoInputs.cache
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\obj\Debug\netcoreapp2.2\LibraryWebAPI.Store.AssemblyInfo.cs
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\obj\Debug\netcoreapp2.2\LibraryWebAPI.Store.csproj.CopyComplete
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\obj\Debug\netcoreapp2.2\LibraryWebAPI.Store.dll
+C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Store\obj\Debug\netcoreapp2.2\LibraryWebAPI.Store.pdb

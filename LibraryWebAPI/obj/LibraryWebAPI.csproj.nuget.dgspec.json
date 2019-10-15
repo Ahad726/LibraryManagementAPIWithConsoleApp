@@ -1,0 +1,207 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI\\LibraryWebAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj",
+        "projectName": "LibraryWebAPI.Core",
+        "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj",
+        "packagesPath": "C:\\Users\\ATM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ATM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj",
+        "projectName": "LibraryWebAPI.Store",
+        "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj",
+        "packagesPath": "C:\\Users\\ATM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ATM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj": {
+                "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI\\LibraryWebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI\\LibraryWebAPI.csproj",
+        "projectName": "LibraryWebAPI",
+        "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI\\LibraryWebAPI.csproj",
+        "packagesPath": "C:\\Users\\ATM\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ATM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj": {
+                "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
