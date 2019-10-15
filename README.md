@@ -1,4 +1,4 @@
-# LibraryManagementAPIWithConsoleApp
+#  A API project using console app.
 
 (1) Enter Student
 (2)Enter Book
