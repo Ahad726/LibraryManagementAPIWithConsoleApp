@@ -26,7 +26,7 @@ namespace LibraryWebAPI.Controllers
         }
 
         // GET api/student/5
-        [HttpGet]
+        [HttpGet("{id}")]
         public void Get(int id)
         {
            

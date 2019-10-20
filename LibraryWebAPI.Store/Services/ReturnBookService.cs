@@ -8,11 +8,41 @@ namespace LibraryWebAPI.Store.Services
 {
     public class ReturnBookService : IReturnBookService
     {
-        private IReturnBookRepository _returnBookRepository;
 
-        public ReturnBookService(IReturnBookRepository returnBookRepository )
+        //Before UnitOfWork pattern
+        #region
+        //private IReturnBookRepository _returnBookRepository;
+
+        //public ReturnBookService(IReturnBookRepository returnBookRepository )
+        //{
+        //    _returnBookRepository = returnBookRepository;
+        //}
+
+        //public bool BookReturn(int studentId, string bookBarcode)
+        //{
+        //    bool isReturned;
+        //    try
+        //    {
+        //        _returnBookRepository.ReturnBook(studentId, bookBarcode);
+        //        _returnBookRepository.IncreamentBookCountAfterReturn(bookBarcode);
+        //        isReturned = true;
+
+        //    }
+        //    catch (Exception)
+        //    {
+
+        //        isReturned = false;
+        //    }
+        //    return isReturned;
+
+        //}
+        #endregion
+
+        private UnitOfWorkLibraryService _unitOfWorkLibraryService;   
+
+        public ReturnBookService(UnitOfWorkLibraryService  unitOfWorkLibraryService )
         {
-            _returnBookRepository = returnBookRepository;
+            _unitOfWorkLibraryService = unitOfWorkLibraryService;
         }
 
         public bool BookReturn(int studentId, string bookBarcode)
@@ -20,8 +50,8 @@ namespace LibraryWebAPI.Store.Services
             bool isReturned;
             try
             {
-                _returnBookRepository.ReturnBook(studentId, bookBarcode);
-                _returnBookRepository.IncreamentBookCountAfterReturn(bookBarcode);
+                _unitOfWorkLibraryService.ReturnBookRepository.ReturnBook(studentId, bookBarcode);
+                _unitOfWorkLibraryService.ReturnBookRepository.IncreamentBookCountAfterReturn(bookBarcode);
                 isReturned = true;
 
             }
@@ -31,9 +61,8 @@ namespace LibraryWebAPI.Store.Services
                 isReturned = false;
             }
             return isReturned;
-        
-        }
 
+        }
 
 
     }

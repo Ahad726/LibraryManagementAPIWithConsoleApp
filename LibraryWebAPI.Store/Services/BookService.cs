@@ -9,35 +9,70 @@ namespace LibraryWebAPI.Store.Services
 {
     public class BookService : IBookService
     {
-        private IBookRepository _bookRepository;
-        public BookService(IBookRepository bookRepository)
+        //// Before UnitOfWorkDesignPattern
+        #region
+        //private IBookRepository _bookRepository;
+        //public BookService(IBookRepository bookRepository)
+        //{
+        //    _bookRepository = bookRepository;
+        //}
+
+        //public List<Book> ShowAllBook()
+        //{
+        //    return _bookRepository.GetAllBook();
+        //}
+
+        //public Book GetDetails(int bookId)
+        //{
+        //    return _bookRepository.GetBookDetails(bookId);
+        //}
+
+        //public void InsertBook(Book book)
+        //{
+        //    _bookRepository.EntryBook(book);
+        //}
+
+        //public bool UpdateBookInfo(int bookId, Book book)
+        //{
+        //    return _bookRepository.UpdateBook(bookId, book);
+        //}
+
+        //public void DeleteBook(int bookId)
+        //{
+        //    _bookRepository.DeleteBook(bookId);
+        //}
+
+        #endregion
+
+        private UnitOfWorkLibraryService _unitOfWorkLibraryService; 
+        public BookService(UnitOfWorkLibraryService unitOfWorkLibraryService )
         {
-            _bookRepository = bookRepository;
+            _unitOfWorkLibraryService = unitOfWorkLibraryService;
         }
 
         public List<Book> ShowAllBook()
         {
-            return _bookRepository.GetAllBook();
+            return _unitOfWorkLibraryService.BookRepository.GetAllBook();
         }
 
         public Book GetDetails(int bookId)
         {
-            return _bookRepository.GetBookDetails(bookId);
+            return _unitOfWorkLibraryService.BookRepository.GetBookDetails(bookId);
         }
 
         public void InsertBook(Book book)
         {
-            _bookRepository.EntryBook(book);
+            _unitOfWorkLibraryService.BookRepository.EntryBook(book);
         }
 
         public bool UpdateBookInfo(int bookId, Book book)
         {
-            return _bookRepository.UpdateBook(bookId, book);
+            return _unitOfWorkLibraryService.BookRepository.UpdateBook(bookId, book);
         }
 
         public void DeleteBook(int bookId)
         {
-            _bookRepository.DeleteBook(bookId);
+            _unitOfWorkLibraryService.BookRepository.DeleteBook(bookId);
         }
     }
 }

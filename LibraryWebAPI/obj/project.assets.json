@@ -12982,11 +12982,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI\\LibraryWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\ATM\\Desktop\\LibraryManagementAPIWithConsoleApp\\LibraryWebAPI\\LibraryWebAPI.csproj",
       "projectName": "LibraryWebAPI",
-      "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI\\LibraryWebAPI.csproj",
+      "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryManagementAPIWithConsoleApp\\LibraryWebAPI\\LibraryWebAPI.csproj",
       "packagesPath": "C:\\Users\\ATM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI\\obj\\",
+      "outputPath": "C:\\Users\\ATM\\Desktop\\LibraryManagementAPIWithConsoleApp\\LibraryWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13005,8 +13005,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj": {
-              "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj"
+            "C:\\Users\\ATM\\Desktop\\LibraryManagementAPIWithConsoleApp\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj": {
+              "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryManagementAPIWithConsoleApp\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj"
             }
           }
         }

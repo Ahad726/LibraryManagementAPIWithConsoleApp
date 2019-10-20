@@ -9,20 +9,41 @@ namespace LibraryWebAPI.Store.Services
 {
     public class StudentService : IStudentService
     {
-        private IStudentRepository _studentRepository;
-        public StudentService(IStudentRepository studentRepository)
+        //Before unit of work 
+        #region 
+        //private IStudentRepository _studentRepository;
+        //public StudentService(IStudentRepository studentRepository)
+        //{
+        //    _studentRepository = studentRepository;
+        //}
+
+        //public void AddStudent(Student student )
+        //{
+        //    _studentRepository.EnterStudent(student);
+        //}
+
+        //public void DeleteStudent(int studentId)
+        //{
+        //    _studentRepository.DeleteStudent(studentId);
+        //}
+        #endregion
+
+        private UnitOfWorkLibraryService _unitOfWorkLibraryService;
+        public StudentService(UnitOfWorkLibraryService unitOfWorkLibraryService)
         {
-            _studentRepository = studentRepository;
+            _unitOfWorkLibraryService = unitOfWorkLibraryService;
         }
 
-        public void AddStudent(Student student )
+        public void AddStudent(Student student)
         {
-            _studentRepository.EnterStudent(student);
+            _unitOfWorkLibraryService.StudentRepository.EnterStudent(student);
         }
 
         public void DeleteStudent(int studentId)
         {
-            _studentRepository.DeleteStudent(studentId);
+            _unitOfWorkLibraryService.StudentRepository.DeleteStudent(studentId);
         }
+
+
     }
 }

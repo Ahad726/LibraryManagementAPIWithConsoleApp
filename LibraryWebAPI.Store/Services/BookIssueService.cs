@@ -8,11 +8,42 @@ namespace LibraryWebAPI.Store.Services
 {
     public class BookIssueService : IBookIssueService
     {
-        private IBookIssueRepository _bookIssueRepository;
+        //Before unitOfWork Design Pattern
+        #region
 
-        public BookIssueService(IBookIssueRepository bookIssueRepository)
+        //private IBookIssueRepository _bookIssueRepository;
+
+        //public BookIssueService(IBookIssueRepository bookIssueRepository)
+        //{
+        //    _bookIssueRepository = bookIssueRepository;
+        //}
+
+        //public bool BookIssueToStudent(int studentId, string BookBarcode)
+        //{
+        //    bool isIssued;
+        //    try
+        //    {
+        //        _bookIssueRepository.IssueBook(studentId, BookBarcode);
+        //        _bookIssueRepository.DecreamentBookCountAfterIssue(BookBarcode);
+        //        isIssued = true;
+
+        //    }
+        //    catch (Exception)
+        //    {
+
+        //        isIssued = false;
+        //    }
+        //    return isIssued;
+
+        //}
+
+        #endregion
+
+
+        private UnitOfWorkLibraryService _unitOfWorkLibraryService; 
+        public BookIssueService(UnitOfWorkLibraryService unitOfWorkLibraryService)
         {
-            _bookIssueRepository = bookIssueRepository;
+            _unitOfWorkLibraryService = unitOfWorkLibraryService;
         }
 
         public bool BookIssueToStudent(int studentId, string BookBarcode)
@@ -20,8 +51,8 @@ namespace LibraryWebAPI.Store.Services
             bool isIssued;
             try
             {
-                _bookIssueRepository.IssueBook(studentId, BookBarcode);
-                _bookIssueRepository.DecreamentBookCountAfterIssue(BookBarcode);
+                _unitOfWorkLibraryService.BookIssueRepositor.IssueBook(studentId, BookBarcode);
+                _unitOfWorkLibraryService.BookIssueRepositor.DecreamentBookCountAfterIssue(BookBarcode);
                 isIssued = true;
 
             }
@@ -31,7 +62,7 @@ namespace LibraryWebAPI.Store.Services
                 isIssued = false;
             }
             return isIssued;
-            
+
         }
 
     }

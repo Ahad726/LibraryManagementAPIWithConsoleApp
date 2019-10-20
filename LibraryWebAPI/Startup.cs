@@ -48,16 +48,11 @@ namespace LibraryWebAPI
 
             services.AddTransient<IReportingService, ReportingService>();
 
-            
+            services.AddTransient<LibraryContext>(x => new LibraryContext(connectionString, migrationAssemblyName));
+            services.AddTransient<UnitOfWorkLibraryService>(x => new UnitOfWorkLibraryService(connectionString, migrationAssemblyName));
 
-            services.AddTransient<IUnitOfWorkLibraryService, UnitOfWorkLibraryService>();
+            // services.AddTransient<IUnitOfWorkLibraryService, UnitOfWorkLibraryService>();
 
-
-
-           services.AddTransient<UnitOfWorkLibraryService>(x => new UnitOfWorkLibraryService(connectionString, migrationAssemblyName))
-                .AddTransient<LibraryContext>(x => new LibraryContext(connectionString, migrationAssemblyName));
-
-            services.AddDbContext<LibraryContext>(x => x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddDbContext<LibraryContext>(x => x.UseSqlServer(connectionString, m =>m.MigrationsAssembly(migrationAssemblyName)));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

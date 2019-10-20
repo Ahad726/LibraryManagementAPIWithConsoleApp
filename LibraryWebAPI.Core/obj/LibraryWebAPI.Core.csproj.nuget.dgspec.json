@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj": {}
+    "C:\\Users\\ATM\\Desktop\\LibraryManagementAPIWithConsoleApp\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj": {
+    "C:\\Users\\ATM\\Desktop\\LibraryManagementAPIWithConsoleApp\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj",
+        "projectUniqueName": "C:\\Users\\ATM\\Desktop\\LibraryManagementAPIWithConsoleApp\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj",
         "projectName": "LibraryWebAPI.Core",
-        "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj",
+        "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryManagementAPIWithConsoleApp\\LibraryWebAPI.Core\\LibraryWebAPI.Core.csproj",
         "packagesPath": "C:\\Users\\ATM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Core\\obj\\",
+        "outputPath": "C:\\Users\\ATM\\Desktop\\LibraryManagementAPIWithConsoleApp\\LibraryWebAPI.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
