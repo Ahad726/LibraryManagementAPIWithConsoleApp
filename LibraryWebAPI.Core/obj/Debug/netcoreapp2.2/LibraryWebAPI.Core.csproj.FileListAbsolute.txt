@@ -7,3 +7,11 @@ C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Core\obj\Debug\netcoreapp2.2\Li
 C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Core\obj\Debug\netcoreapp2.2\LibraryWebAPI.Core.AssemblyInfo.cs
 C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Core\obj\Debug\netcoreapp2.2\LibraryWebAPI.Core.dll
 C:\Users\ATM\Desktop\LibraryWebAPI\LibraryWebAPI.Core\obj\Debug\netcoreapp2.2\LibraryWebAPI.Core.pdb
+C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Core\bin\Debug\netcoreapp2.2\LibraryWebAPI.Core.deps.json
+C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Core\bin\Debug\netcoreapp2.2\LibraryWebAPI.Core.dll
+C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Core\bin\Debug\netcoreapp2.2\LibraryWebAPI.Core.pdb
+C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Core\obj\Debug\netcoreapp2.2\LibraryWebAPI.Core.csprojAssemblyReference.cache
+C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Core\obj\Debug\netcoreapp2.2\LibraryWebAPI.Core.AssemblyInfoInputs.cache
+C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Core\obj\Debug\netcoreapp2.2\LibraryWebAPI.Core.AssemblyInfo.cs
+C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Core\obj\Debug\netcoreapp2.2\LibraryWebAPI.Core.dll
+C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Core\obj\Debug\netcoreapp2.2\LibraryWebAPI.Core.pdb

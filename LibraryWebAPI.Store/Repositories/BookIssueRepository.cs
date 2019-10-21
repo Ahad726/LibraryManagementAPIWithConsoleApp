@@ -16,25 +16,9 @@ namespace LibraryWebAPI.Store.Repositories
         }
 
 
-        //this method used inside this class only 
-        //and not to attached inside the interface
-        public Book GetBookByBarCode(string bookBarcode)
+        public void IssueBook(IssueBook issueBook)
         {
-            return _context.Books.Where(b => b.Barcode == bookBarcode).FirstOrDefault();
-        }
-
-        public void IssueBook(int studentId, string bookBarCode)
-        {
-            var book = GetBookByBarCode(bookBarCode);
-
-            _context.IssueBooks.Add(new IssueBook
-            {
-                StudentId = studentId,
-                BookId = book.BookId,
-                BookBarCode = bookBarCode,
-                IssueDate = DateTime.Now
-            });
-
+            _context.IssueBooks.Add(issueBook);
         }
 
         public DateTime GetBookIssueDate(int studentId)
@@ -43,15 +27,9 @@ namespace LibraryWebAPI.Store.Repositories
             return student.IssueDate;
         }
 
-        public void DecreamentBookCountAfterIssue(string BarCode)
+        public void DecreamentBookCountAfterIssue(Book book)
         {
-            var book = GetBookByBarCode(BarCode);
-            var bookCount = book.CopyCount;
-
-            bookCount = bookCount - 1;
-
-            book.CopyCount = bookCount;
-            _context.SaveChanges();
+            _context.Books.Update(book);
 
         }
     }

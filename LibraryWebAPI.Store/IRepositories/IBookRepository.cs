@@ -9,10 +9,10 @@ namespace LibraryWebAPI.Store.IRepositories
     {
         void EntryBook(Book book);
         List<Book> GetAllBook();
-
+        Book GetBookByBarCode(string barCode);
         Book GetBookDetails(int bookId);
 
-        bool UpdateBook(int bookId, Book book);
+        void UpdateBook(Book book);
 
         void DeleteBook(int bookId);
 

@@ -9,6 +9,8 @@ namespace LibraryWebAPI.Client
         {
 
 
+
+
         star:
             Console.Clear();
             Console.WriteLine("\t=================================================================================");
@@ -68,22 +70,24 @@ namespace LibraryWebAPI.Client
                     default:
                         Console.WriteLine("Invalid Key Given.Please Try Again");
                         break;
-                        
+
                 }
 
-                
+
+
 
             }
             catch (Exception e)
             {
 
                 Console.WriteLine(e.Message);
-                                
+
                 Console.Beep(400, 1500);
 
                 goto star;
-               
+
             }
+
 
 
 

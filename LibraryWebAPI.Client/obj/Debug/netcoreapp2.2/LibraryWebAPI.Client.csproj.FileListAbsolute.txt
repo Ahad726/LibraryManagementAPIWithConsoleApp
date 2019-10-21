@@ -20,7 +20,6 @@ C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Client\bin
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Client\bin\Debug\netcoreapp2.2\LibraryWebAPI.Core.dll
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Client\bin\Debug\netcoreapp2.2\LibraryWebAPI.Core.pdb
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.csprojAssemblyReference.cache
-C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.csproj.CoreCompileInputs.cache
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.AssemblyInfoInputs.cache
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.AssemblyInfo.cs
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI.Client\obj\Debug\netcoreapp2.2\LibraryWebAPI.Client.csproj.CopyComplete

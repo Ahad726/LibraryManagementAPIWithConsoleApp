@@ -36,51 +36,16 @@ namespace LibraryWebAPI.Controllers
 
         // POST api/ManagingLibrary/IssueBook
         [HttpPost("/api/ManagingLibrary/IssueBook")]
-        public ActionResult IssueBook([FromBody] IssueBook issueBook)
+        public void IssueBook([FromBody] IssueBook issueBook)
         {
-            try
-            {
-                var isBookIssue = _bookIssueService.BookIssueToStudent(issueBook.StudentId, issueBook.BookBarCode);
-                if (isBookIssue)
-                {
-                    return Ok("Book Successfully Issued");
-                }
-                else
-                {
-                    return NotFound("Issue Book Failed");
-                }
-            }
-            catch (Exception e)
-            {
-
-                return BadRequest(e.Message);
-            }
-
+            _bookIssueService.BookIssueToStudent(issueBook.StudentId, issueBook.BookBarCode);
         }
 
         // POST api/ManagingLibrary/ReturnBook
         [HttpPost("/api/ManagingLibrary")]
-        public ActionResult ReturnBook([FromBody] ReturnBook returnBook)
+        public void ReturnBook([FromBody] ReturnBook returnBook)
         {
-            try
-            {
-                var isBookReturn = _returnBookService.BookReturn(returnBook.StudentId, returnBook.BookBarCode);
-
-                if (isBookReturn)
-                {
-                    return Ok("Book Successfully Returned");
-                }
-                else
-                {
-                    return NotFound("Return Book Failed");
-                }
-            }
-            catch (Exception e)
-            {
-
-                return BadRequest(e.Message);
-            }
-
+            _returnBookService.BookReturn(returnBook.StudentId, returnBook.BookBarCode);
         }
 
 

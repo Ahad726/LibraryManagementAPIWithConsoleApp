@@ -15,6 +15,11 @@ namespace LibraryWebAPI.Store.Repositories
             _context = context;
         }
 
+        public Student GetStudentById(int studentId)
+        {
+            return _context.Students.Where(x => x.StudentId == studentId).FirstOrDefault();
+        }
+
         public void EnterStudent(Student student )
         {
             _context.Students.Add(new Student

@@ -1,4 +1,5 @@
-﻿using LibraryWebAPI.Store.IRepositories;
+﻿using LibraryWebAPI.Core;
+using LibraryWebAPI.Store.IRepositories;
 using LibraryWebAPI.Store.IServices;
 using System;
 using System.Collections.Generic;
@@ -40,28 +41,46 @@ namespace LibraryWebAPI.Store.Services
         #endregion
 
 
-        private UnitOfWorkLibraryService _unitOfWorkLibraryService; 
+        private UnitOfWorkLibraryService _unitOfWorkLibraryService;
         public BookIssueService(UnitOfWorkLibraryService unitOfWorkLibraryService)
         {
             _unitOfWorkLibraryService = unitOfWorkLibraryService;
         }
 
-        public bool BookIssueToStudent(int studentId, string BookBarcode)
+        public void BookIssueToStudent(int studentId, string BookBarcode)
         {
-            bool isIssued;
-            try
-            {
-                _unitOfWorkLibraryService.BookIssueRepositor.IssueBook(studentId, BookBarcode);
-                _unitOfWorkLibraryService.BookIssueRepositor.DecreamentBookCountAfterIssue(BookBarcode);
-                isIssued = true;
 
-            }
-            catch (Exception)
+            var book = _unitOfWorkLibraryService.BookRepository.GetBookByBarCode(BookBarcode);
+            var student = _unitOfWorkLibraryService.StudentRepository.GetStudentById(studentId);
+            if (student != null)
             {
+                if (book != null)
+                {
+                    var issuedBook = new IssueBook
+                    {
+                        StudentId = studentId,
+                        BookId = book.BookId,
+                        BookBarCode = BookBarcode,
+                        IssueDate = DateTime.UtcNow
+                    };
+                    _unitOfWorkLibraryService.BookIssueRepositor.IssueBook(issuedBook);
 
-                isIssued = false;
+                    var bookCount = book.CopyCount;
+                    bookCount -= 1;
+                    book.CopyCount = bookCount;
+                    _unitOfWorkLibraryService.BookIssueRepositor.DecreamentBookCountAfterIssue(book);
+                    _unitOfWorkLibraryService.save();
+
+                }
+                else
+                {
+                    throw new InvalidOperationException("This book Is not available");
+                }
             }
-            return isIssued;
+            else
+            {
+                throw new InvalidOperationException($"Student Id {studentId} Not a valid Student");
+            }
 
         }
 

@@ -13,7 +13,7 @@ namespace LibraryWebAPI.Store.IServices
 
         Book GetDetails(int bookId);
 
-        bool UpdateBookInfo(int bookId, Book book);
+        void UpdateBookInfo(Book book);
         void DeleteBook(int bookId);
     }
 }

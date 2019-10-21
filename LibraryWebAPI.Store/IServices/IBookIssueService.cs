@@ -6,7 +6,7 @@ namespace LibraryWebAPI.Store.IServices
 {
     public interface IBookIssueService
     {
-        bool BookIssueToStudent(int studentId, string BookBarcode);
+        void BookIssueToStudent(int studentId, string BookBarcode);
 
 
     }

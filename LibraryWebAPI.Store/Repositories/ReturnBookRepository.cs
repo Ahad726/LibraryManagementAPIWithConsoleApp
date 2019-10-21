@@ -16,22 +16,10 @@ namespace LibraryWebAPI.Store.Repositories
             _Context = context;
         }
 
-        public Book GetBookByBarCode(string bookBarCode)
-        {
-            return _Context.Books.Where(b => b.Barcode == bookBarCode).FirstOrDefault();
-        }
-        public void ReturnBook(int studentId, string bookBarCode)
-        {
-            var book = GetBookByBarCode(bookBarCode);
 
-            _Context.ReturnBooks.Add(new ReturnBook
-            {
-                StudentId = studentId,
-                BookId = book.BookId,
-                BookBarCode = bookBarCode,
-                ReturnDate = DateTime.Now
-            });
-            _Context.SaveChanges();
+        public void ReturndBook(ReturnBook returnBook)
+        {
+            _Context.ReturnBooks.Add(returnBook);
 
         }
 
@@ -40,14 +28,9 @@ namespace LibraryWebAPI.Store.Repositories
             return _Context.ReturnBooks.Where(rb => rb.StudentId == studentId).Select(rb => rb.ReturnDate).FirstOrDefault();
         }
 
-        public void IncreamentBookCountAfterReturn(string BookBarcode)
+        public void IncreamentBookCountAfterReturn(Book book)
         {
-            var book = GetBookByBarCode(BookBarcode);
-
-            var bookCount = book.CopyCount + 1;
-
-            book.CopyCount = bookCount;
-            _Context.SaveChanges();
+            _Context.Books.Update(book);
         }
 
 

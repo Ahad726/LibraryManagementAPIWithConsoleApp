@@ -6,6 +6,6 @@ namespace LibraryWebAPI.Store.IServices
 {
     public interface IReturnBookService
     {
-        bool BookReturn(int studentId, string bookBarcode);
+        void BookReturn(int studentId, string bookBarcode);
     }
 }

@@ -1,4 +1,5 @@
-﻿using LibraryWebAPI.Store.IRepositories;
+﻿using LibraryWebAPI.Core;
+using LibraryWebAPI.Store.IRepositories;
 using LibraryWebAPI.Store.IServices;
 using System;
 using System.Collections.Generic;
@@ -38,32 +39,44 @@ namespace LibraryWebAPI.Store.Services
         //}
         #endregion
 
-        private UnitOfWorkLibraryService _unitOfWorkLibraryService;   
-
-        public ReturnBookService(UnitOfWorkLibraryService  unitOfWorkLibraryService )
+        private UnitOfWorkLibraryService _unitOfWorkLibraryService;
+        public ReturnBookService(UnitOfWorkLibraryService unitOfWorkLibraryService)
         {
             _unitOfWorkLibraryService = unitOfWorkLibraryService;
         }
-
-        public bool BookReturn(int studentId, string bookBarcode)
+        public void BookReturn(int studentId, string bookBarcode)
         {
-            bool isReturned;
-            try
-            {
-                _unitOfWorkLibraryService.ReturnBookRepository.ReturnBook(studentId, bookBarcode);
-                _unitOfWorkLibraryService.ReturnBookRepository.IncreamentBookCountAfterReturn(bookBarcode);
-                isReturned = true;
 
-            }
-            catch (Exception)
-            {
+            var book = _unitOfWorkLibraryService.BookRepository.GetBookByBarCode(bookBarcode);
+            var student = _unitOfWorkLibraryService.StudentRepository.GetStudentById(studentId);
 
-                isReturned = false;
+            if (student != null && book != null)
+            {
+                var returnBook = new ReturnBook
+                {
+                    StudentId = studentId,
+                    BookId = book.BookId,
+                    BookBarCode = bookBarcode,
+                    ReturnDate = DateTime.Now
+                };
+
+                _unitOfWorkLibraryService.ReturnBookRepository.ReturndBook(returnBook);
+
+                var bookCount = book.CopyCount;
+                bookCount += 1;
+                book.CopyCount = bookCount;
+
+                _unitOfWorkLibraryService.ReturnBookRepository.IncreamentBookCountAfterReturn(book);
+                _unitOfWorkLibraryService.save();
             }
-            return isReturned;
+            else
+            {
+                throw new InvalidOperationException(" Invalid  Operation ");
+            }
+
+
+
 
         }
-
-
     }
 }

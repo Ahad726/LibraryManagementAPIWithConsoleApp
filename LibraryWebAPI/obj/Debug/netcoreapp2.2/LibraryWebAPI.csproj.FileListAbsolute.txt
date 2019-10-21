@@ -27,7 +27,6 @@ C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\bin\Debug\
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\bin\Debug\netcoreapp2.2\LibraryWebAPI.Store.pdb
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\bin\Debug\netcoreapp2.2\LibraryWebAPI.Core.pdb
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\obj\Debug\netcoreapp2.2\LibraryWebAPI.csprojAssemblyReference.cache
-C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\obj\Debug\netcoreapp2.2\LibraryWebAPI.csproj.CoreCompileInputs.cache
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\obj\Debug\netcoreapp2.2\LibraryWebAPI.RazorAssemblyInfo.cache
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\obj\Debug\netcoreapp2.2\LibraryWebAPI.RazorAssemblyInfo.cs
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\obj\Debug\netcoreapp2.2\LibraryWebAPI.AssemblyInfoInputs.cache
@@ -36,3 +35,6 @@ C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\obj\Debug\
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\obj\Debug\netcoreapp2.2\LibraryWebAPI.csproj.CopyComplete
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\obj\Debug\netcoreapp2.2\LibraryWebAPI.dll
 C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\obj\Debug\netcoreapp2.2\LibraryWebAPI.pdb
+C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\ATM\Desktop\LibraryManagementAPIWithConsoleApp\LibraryWebAPI\bin\Debug\netcoreapp2.2\Properties\launchSettings.json

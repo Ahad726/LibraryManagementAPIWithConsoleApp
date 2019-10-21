@@ -38,21 +38,18 @@ namespace LibraryWebAPI.Controllers
         {
             _bookService.InsertBook(book);
         }
-
         // PUT api/book/5
-        [HttpPut("/api/book/{bookId}")]
-        public ActionResult Put(int bookId, [FromBody] Book book)
+        [HttpPut("/api/book")]
+        public ActionResult Put( [FromBody] Book book)
         {
-
-            var bookUpdate = _bookService.UpdateBookInfo(bookId, book);
-
-            if (bookUpdate)
+            try
             {
+                _bookService.UpdateBookInfo(book);
                 return Ok("Book Update Successful");
             }
-            else
+            catch (Exception)
             {
-                return NotFound($"Book with BookId {bookId} Not Found ");
+                return NotFound($"Book  Not Found ");
             }
         }
 

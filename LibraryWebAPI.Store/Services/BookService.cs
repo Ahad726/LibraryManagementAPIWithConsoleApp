@@ -44,8 +44,8 @@ namespace LibraryWebAPI.Store.Services
 
         #endregion
 
-        private UnitOfWorkLibraryService _unitOfWorkLibraryService; 
-        public BookService(UnitOfWorkLibraryService unitOfWorkLibraryService )
+        private UnitOfWorkLibraryService _unitOfWorkLibraryService;
+        public BookService(UnitOfWorkLibraryService unitOfWorkLibraryService)
         {
             _unitOfWorkLibraryService = unitOfWorkLibraryService;
         }
@@ -63,11 +63,13 @@ namespace LibraryWebAPI.Store.Services
         public void InsertBook(Book book)
         {
             _unitOfWorkLibraryService.BookRepository.EntryBook(book);
+            _unitOfWorkLibraryService.save();
         }
 
-        public bool UpdateBookInfo(int bookId, Book book)
+        public void UpdateBookInfo(Book book)
         {
-            return _unitOfWorkLibraryService.BookRepository.UpdateBook(bookId, book);
+            _unitOfWorkLibraryService.BookRepository.UpdateBook(book);
+            _unitOfWorkLibraryService.save();
         }
 
         public void DeleteBook(int bookId)

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryWebAPI.Core;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,8 +7,8 @@ namespace LibraryWebAPI.Store.IRepositories
 {
     public interface IReturnBookRepository
     {
-        void ReturnBook(int studentId, string bookBarCode);
+        void ReturndBook(ReturnBook returnBook);
         DateTime GetBookReturnDate(int studentId);
-        void IncreamentBookCountAfterReturn(string BookBarcode);
+        void IncreamentBookCountAfterReturn(Book book);
     }
 }
