@@ -12,6 +12,5 @@ namespace LibraryWebAPI.Store.IRepositories
         void DeleteStudent(int studentId);
         void SetStudentFine(int studentId, double fine);
         double CheckFine(int studentId);
-        void ReceivedFine(int studentId, double receivedFine);
     }
 }

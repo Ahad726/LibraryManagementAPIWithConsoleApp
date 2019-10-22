@@ -41,12 +41,16 @@ namespace LibraryWebAPI.Store.Services
         {
             return _unitOfWorkLibraryService.StudentRepository.CheckFine(studentId);
         }
-
-
         public void ReceiveFine(int studentId, double receivedAmount)
         {
-            _unitOfWorkLibraryService.StudentRepository.ReceivedFine(studentId, receivedAmount);
-            _unitOfWorkLibraryService.save();
+            var studentFine = _unitOfWorkLibraryService.StudentRepository.CheckFine(studentId);
+            var remainingFine = studentFine - receivedAmount;
+            if (remainingFine > 0)
+            {
+                _unitOfWorkLibraryService.StudentRepository.SetStudentFine(studentId, remainingFine);
+                _unitOfWorkLibraryService.save();
+            }
+
         }
 
 
